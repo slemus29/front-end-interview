@@ -1,0 +1,17 @@
+body{
+  background-image: radial-gradient(ellipse farthest-corner at center top, #C37967 0%, #ECE4C0 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#root{
+  height: 100%;
+}
+
+.App {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
