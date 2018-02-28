@@ -4,6 +4,8 @@ import logo from './logo.svg';
 import './normalize.css';
 import './App.css';
 import PresentationCard from './components/presentationCard'
+import StockValue from './components/stockValues';
+import MenuDemo from './views/menuDemo';
 
 class App extends Component {
   render() {
@@ -12,6 +14,8 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={PresentationCard}/>
+            <Route path="/stock" component={StockValue}/> 
+            <Route path="/navigation" component={MenuDemo}/>
           </Switch>
         </Router>
       </div>
