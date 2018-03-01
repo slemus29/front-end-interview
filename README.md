@@ -43,4 +43,4 @@ The functionallity of language switch was included for the complete application.
 
 The way it was build was around of HTTP requests for the labels of the language selected, it was built this way to avoid having multiple languages in memory if just one was going to be used.
 
-The function in [languageManager.js](/src/i18n/languageManager.js) fetch the json for the required language and returns a promise with a function that given a key returns the right label, or a default not found message, this function is propagated from the root component to its children explicitly, when the toggle is clicked the new function is propagated in the same way.
+The function in [languageManager.js](https://github.com/slemus29/front-end-interview/blob/master/app/src/i18n/languageManager.js) fetch the json for the required language and returns a promise with a function that given a key returns the right label, or a default not found message, this function is propagated from the root component to its children explicitly, when the toggle is clicked the new function is propagated in the same way.
