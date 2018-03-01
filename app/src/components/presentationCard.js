@@ -12,7 +12,7 @@ const WidgetMenuItem = ({text, icon, destination}) => {
     </li>
 }
 
-const PresentationCard = ()=> <div className="presentationCard">
+const PresentationCard = ({i18n})=> <div className="presentationCard">
     <div className="presentationCard__header">
         <div className="presentationCard__wrapper">
             <div className="presentationCard__avatar">
@@ -20,15 +20,15 @@ const PresentationCard = ()=> <div className="presentationCard">
             </div>
             <div className="presentationCard__info">
                 <h1 className="presentationCard__info__title">Santiago Lemus</h1>
-                <p className="presentationCard__info__text">Software Developer</p>
+                <p className="presentationCard__info__text">{i18n("title")}</p>
             </div>
         </div>
     </div>
     <ul className="presentationCard__menu">
-        <WidgetMenuItem text="Stock Values" icon="chart-line" destination="/stock"/>
-        <WidgetMenuItem text="Storage Information" icon="database" destination="/storage" />
-        <WidgetMenuItem text="Navigation Bar" icon="bars" destination="/navigation"/>
-        <WidgetMenuItem text="Contact Form" icon="envelope" destination="/contact"/>
+        <WidgetMenuItem text={i18n("stock.values")} icon="chart-line" destination="/stock"/>
+        <WidgetMenuItem text={i18n("storage.information")} icon="database" destination="/storage" />
+        <WidgetMenuItem text={i18n("navigation.bar")} icon="bars" destination="/navigation"/>
+        <WidgetMenuItem text={i18n("contact.form")} icon="envelope" destination="/contact"/>
     </ul>
 </div>
 

@@ -1,0 +1,95 @@
+.storageInfo{
+    border-radius: 10px;
+    overflow: hidden;
+    &__doughnut{
+        background: white;
+        &__title{
+            margin:0;
+            text-align: center;
+            font-size: 14px;
+            padding: 20px 0;
+            text-transform: uppercase;
+        }
+        &__container{
+            position: relative;
+            padding-bottom: 30px;
+            &__storage{
+                position: absolute;
+                top: 54px;
+                left: 40%;
+                color: #8E8071;
+                font-weight: bold;
+            }
+        }
+    }
+    &__percentage{
+        display: flex;
+        list-style-type: none; 
+        background-color: #F6F0EC;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        &__item{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            border-right: 2px solid #F7F3F0;
+            &__container{
+                margin:10px;
+            }
+            &__text{
+                font-size: 0.8em;
+                color: #ADA8A3;
+            }
+            &__value{
+                font-size: 1.3em;
+                color: #8E8071;
+                font-weight: bold;
+            }
+            &--video:before{
+                content: '';
+                background-color: #CF573A;
+                height: 3px;
+                
+            }
+            &--audio:before{
+                content: '';
+                background-color:#E6C86F;
+                height: 3px;
+                
+            }
+            &--images:before{
+                content: '';
+                background-color:#67AC7F;
+                height: 3px;
+                
+            }
+        }
+    }
+    &__links{
+        display: flex;
+        list-style-type: none; 
+        background-color: white;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        &__container{
+            text-align: center;
+            width: 100%;
+            background-color: #776B5E;
+            color: white;
+            padding:15px 0;
+        }
+        &__container:hover{
+            background-color: #64584C;
+        }
+
+        
+        &__text{
+            font-size: 0.6em;
+            text-transform: uppercase;
+            
+        }
+    }
+}

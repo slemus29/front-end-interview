@@ -30,7 +30,6 @@ export class Menu extends Component {
 export const MenuItem = ({isActive, icon, text, action}) => {
     const classModifier = isActive ? "menu__item menu__item--active" : "menu__item";
     const iconClass = `menu__item__icon fas fa-${icon}`;
-    console.log(isActive);
     return(
         <li className={classModifier} onClick= {action}>
             <div className="menu__item__container" >  

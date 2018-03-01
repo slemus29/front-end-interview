@@ -1,0 +1,9 @@
+{
+    "availableStorage": 2000000000,
+    "storageTaken": {
+        "video": 1000000000,
+        "audio": 560000000,
+        "images": 200000000
+    }
+}
+

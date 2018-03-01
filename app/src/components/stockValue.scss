@@ -1,0 +1,97 @@
+.stockValue{
+    &__graph{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        background: linear-gradient(180deg, #69AF7E 50%, #589B6D 50%);
+        &__value{
+            color: white;
+            position: absolute;
+            left:30px;
+            top:10px;
+            &__top{
+                margin: 0;
+                font-size: 1.2em;
+            }
+            &__bottom{
+                margin: 0;
+                font-size: 0.8em;
+                color: rgb(235, 227, 227);
+            }
+        }
+        &__line{
+            display: flex;
+            text-align: center;
+            padding-top: 50px;
+            width: 80%;
+            height: 80%;
+        }
+    }
+    &__info{
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        &__wrapper{
+            width: 80%;
+            margin-top: 20px;
+        }
+        &__date{
+            color:rgb(133, 119, 108);
+            margin: 0;
+            font-size: 0.8em;
+        }
+        &__city{
+            color:rgb(114, 104, 95);
+            margin: 0;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        &__trader{
+            display: flex;
+            &__box{
+                background-color: #F5F0ED;
+                color:rgb(114, 104, 95);
+                width: 100%;
+                text-align: center;
+                margin-right: 2px;
+                padding: 20px 0;
+                &__value{
+                    margin:0;
+                }
+                &__description{
+                    margin:0;
+                    font-size: 0.7em;
+                }
+            }
+        }
+        //details
+        &__details{
+            display: flex;
+            &__box{
+                background-color: white;
+                width: 100%;
+                text-align: center;
+                &__value{
+                    color: rgb(133, 119, 108);
+                }
+                &__description{
+                    color:white;
+                    padding: 10px 0;
+                    background-color: #67AC7F;
+                    &--red{
+                        background-color: red;
+                        color:white;
+                        padding: 10px 0;
+                    }
+                }
+                &__icon{
+                    opacity: 1;
+                    &--hidden{
+                        display: none;
+                    }
+                }
+                
+            }
+        }
+    }
+}
