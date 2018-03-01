@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './langToggle.css';
 
 export default class LangToggle extends Component{
     constructor(props){
@@ -20,8 +21,9 @@ export default class LangToggle extends Component{
     }
     render(){
         const label = this.state.currentVal == 0 ? this.props.labelVal1 : this.props.labelVal2;
-        return <div onClick={this.executeCorrespondingFunction}>
+        return <div className="langToggle" onClick={this.executeCorrespondingFunction}>
             {label}
+            <i className="fas fa-language"></i>
         </div>
     }
 
